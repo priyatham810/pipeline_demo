@@ -1,0 +1,16 @@
+name: basic
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu_latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: print information
+        run: echo "ci has started triggering"
+   
