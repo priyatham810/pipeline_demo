@@ -1,0 +1,15 @@
+name: combo of branch-path
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger
+        run: echo "triggered on src and main"
