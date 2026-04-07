@@ -1,11 +1,12 @@
 name: path-filter
 on:
   push:
-    path:
+    paths:
       - 'src/**'
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    name: trigger
-    run: echo "triggered for src"
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger
+        run: echo "triggered for src"
