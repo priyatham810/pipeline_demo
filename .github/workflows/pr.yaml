@@ -1,0 +1,15 @@
+name: PR-request
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  balayya-validates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: pr validation
+        run: echo "PR validation"
+  
