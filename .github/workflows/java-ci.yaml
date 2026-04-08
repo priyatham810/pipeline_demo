@@ -1,7 +1,9 @@
 name: 06-Java-CI
 
 on:
-  push
+  push:
+    paths:
+      - "java-app/**"
 
 jobs:
   java:
