@@ -1,6 +1,9 @@
 name: 05-Node-CI
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'node-app/**'
 
 jobs:
   node:
