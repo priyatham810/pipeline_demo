@@ -8,4 +8,4 @@ jobs:
   env:
    APP: demo
   steps:
-   -run: echo $APP
+   - run: echo $APP
